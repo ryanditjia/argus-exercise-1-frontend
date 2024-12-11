@@ -1,9 +1,9 @@
 'use client'
 
-import { useNakamaRPC } from './NakamaRPC'
+import { useNakama } from './nakama'
 
 export const AttackButton = () => {
-	const rpc = useNakamaRPC()
+	const { rpc } = useNakama()
 
 	return (
 		<button onClick={() => rpc('tx/game/attack-player', { Target: 'CoolMage' })}>Attack</button>
