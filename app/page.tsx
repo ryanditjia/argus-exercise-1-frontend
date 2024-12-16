@@ -1,9 +1,9 @@
-import { AttackButton } from './AttackButton'
+import { Room } from './Room'
 
 export default function Home() {
 	return (
 		<main>
-			<AttackButton />
+			<Room />
 		</main>
 	)
 }
